@@ -59,7 +59,7 @@
   PostES5.prototype.edit = function (newText) {
     this.text = newText;
     this.update = new Date();
-  }
+  };
 
   function AttachedPostES5(author, text) {
     PostES5.call(this, author, text);
@@ -72,7 +72,7 @@
   AttachedPostES5.prototype.makeTextHighlighted = function () {
     this.highlighted = true;
     this.update = new Date();
-  }
+  };
 
   //-------------------------------------------------------------------------
 

@@ -36,8 +36,8 @@
 
   const dropItem = document.querySelectorAll('.dropdown-item');
   dropItem.forEach((elem) => {
-    elem.classList.add('super-dropdown')
-  })
+    elem.classList.add('super-dropdown');
+  });
 
   /*
   2. У элемента с классом btn необходимо убрать класс "btn-secondary", если он
@@ -77,7 +77,8 @@
   атрибут "aria-labelledby" равный "dropdownMenuButton" используя dataset.
    */
 
-  const attEl = document.querySelector('[aria-labelledby="dropdownMenuButton"]');
+  const attEl = document
+          .querySelector('[aria-labelledby="dropdownMenuButton"]');
   attEl.dataset.dd = '3';
 
   /*
@@ -94,7 +95,7 @@
   Атрибут "class" содержит значение "btn btn-secondary dropdown-toggle"
    */
 
-  const outputEl = document.querySelector('.btn, .dropdown-toggle');
+  const outputEl = document.querySelector('.btn.dropdown-toggle');
   for (let i = 0; i < outputEl.attributes.length; i++) {
     console.log(`Атрибут "${outputEl.attributes[i].name}" содержит значение \
 "${outputEl.attributes[i].value}"`);
